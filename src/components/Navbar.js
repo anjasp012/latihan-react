@@ -6,9 +6,9 @@ function Navbar({ children }) {
     <div>
       <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
         <div className="container">
-          <a className="navbar-brand" href="#">
+          <NavLink className="navbar-brand" to="/">
             Navbar
-          </a>
+          </NavLink>
           <button
             className="navbar-toggler"
             type="button"
@@ -35,6 +35,11 @@ function Navbar({ children }) {
               <li className="nav-item">
                 <NavLink className="nav-link" aria-current="page" to="/contact">
                   Contact
+                </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink className="nav-link" aria-current="page" to="/users">
+                  Users
                 </NavLink>
               </li>
             </ul>
